@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get "get '/cocktails', to: 'cocktails#index'"
+  get "post '/cocktails', to: 'cocktails#create'"
+  get "get '/cocktails/new', to: 'cocktails#new'"
+  get "get '/cocktails/:id', to: 'cocktails#show'"
 end
